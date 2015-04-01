@@ -17,7 +17,7 @@
 
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="http://code.jquery.com/qunit/qunit-1.17.1.js"></script>
-    <script src="../list.js"></script>
+    <script src="../js/list.js"></script>
     <script>
         /*global $, test, equal */
 
@@ -28,11 +28,6 @@
 
         test("errors should not be hidden unless there is a keypress", function () {
             equal($('.has-error').is(':visible'), true);
-        })
-
-        test("errors should be hidden on click", function () {
-           $('input').last().trigger('click');
-            equal($('.has-error').is(':visible'), false);
         });
 
 
